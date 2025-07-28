@@ -1,0 +1,57 @@
+{
+  "expectations": [
+    {
+      "id": "90004e20-2e55-4893-81ac-34f1be4c5da5",
+      "kwargs": {
+        "column": "REGION",
+        "mostly": 0.99,
+        "result_format": "COMPLETE",
+        "value_set": [
+          "GTA",
+          "QUEBEC",
+          "PRAIRIES",
+          "PACIFIC",
+          "ALBERTA",
+          "ONTARIO",
+          "ATLANTIC"
+        ]
+      },
+      "meta": {},
+      "type": "expect_column_values_to_be_in_set"
+    },
+    {
+      "id": "7f4802f2-7ef8-471b-8858-e4f8e0e9c679",
+      "kwargs": {
+        "column": "REGION",
+        "result_format": "COMPLETE"
+      },
+      "meta": {},
+      "type": "expect_column_values_to_not_be_null"
+    },
+    {
+      "id": "6c5ea5ad-227f-4de1-8cb8-1b953b938ae1",
+      "kwargs": {
+        "column": "CERTNUM",
+        "result_format": "COMPLETE"
+      },
+      "meta": {},
+      "type": "expect_column_values_to_not_be_null"
+    },
+    {
+      "id": "93ca2687-a5ec-443e-b316-d625bdbaa9b0",
+      "kwargs": {
+        "column": "CURRENT_OUTSTANDING_BAL_AMT",
+        "max_value": 1500000.0,
+        "result_format": "COMPLETE"
+      },
+      "meta": {},
+      "type": "expect_column_values_to_be_between"
+    }
+  ],
+  "id": "92aacbee-22dc-47be-a51f-5323bf8edea3",
+  "meta": {
+    "great_expectations_version": "1.5.5"
+  },
+  "name": "daily_delq-quality_suite",
+  "notes": null
+}
