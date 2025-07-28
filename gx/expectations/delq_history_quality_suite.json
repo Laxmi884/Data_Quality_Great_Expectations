@@ -4,6 +4,7 @@
       "id": "028de4d7-b367-445b-844b-470545b01b24",
       "kwargs": {
         "column": "REGION",
+        "condition_parser": "pandas",
         "mostly": 0.99,
         "result_format": "COMPLETE",
         "value_set": [
@@ -23,6 +24,7 @@
       "id": "bf9fffdb-2abc-42ef-9158-253490f6900b",
       "kwargs": {
         "column": "REGION",
+        "condition_parser": "pandas",
         "mostly": 0.99,
         "result_format": "COMPLETE"
       },
@@ -33,6 +35,7 @@
       "id": "8235255c-4aff-4671-8c84-3c8ff55c4180",
       "kwargs": {
         "column": "CERTNUM",
+        "condition_parser": "pandas",
         "mostly": 0.99,
         "result_format": "COMPLETE"
       },
@@ -43,6 +46,7 @@
       "id": "00e68719-e04b-4be1-9978-174883c19905",
       "kwargs": {
         "column": "DTAPPREC",
+        "condition_parser": "pandas",
         "mostly": 0.99,
         "result_format": "COMPLETE"
       },
@@ -53,6 +57,7 @@
       "id": "a697d456-1b3e-447e-80c5-352845e55020",
       "kwargs": {
         "column": "CURRENT_OUTSTANDING_BAL_AMT",
+        "condition_parser": "pandas",
         "mostly": 0.99,
         "result_format": "COMPLETE",
         "row_condition": "CURRENT_OUTSTANDING_BAL_AMT > 0"
@@ -64,6 +69,7 @@
       "id": "0dc69e74-9de6-4633-a109-4b272a31f989",
       "kwargs": {
         "column": "CPA_REMAINING_AMORTIZATION",
+        "condition_parser": "pandas",
         "mostly": 0.99,
         "result_format": "COMPLETE",
         "row_condition": "CURRENT_OUTSTANDING_BAL_AMT > 0"
@@ -75,6 +81,7 @@
       "id": "fcbc3833-d158-44f0-b55f-108a5669c9e2",
       "kwargs": {
         "column": "CURRENT_OUTSTANDING_BAL_AMT",
+        "condition_parser": "pandas",
         "mostly": 0.99,
         "result_format": "COMPLETE",
         "row_condition": "CPA_REMAINING_AMORTIZATION > 0"
