@@ -93,5 +93,17 @@ fluent_datasources:
           my_batch_definition:
             id: 4d4e1c7a-0f6d-475a-ac2c-0c2d1be809c5
             partitioner:
+  risk_analytics:
+    type: pandas
+    id: b0b6397e-e369-46c8-8c1e-cac4ee370833
+    assets:
+      delq_history:
+        type: dataframe
+        id: 7ec1f637-3cb8-4762-b82f-cacc04d54c00
+        batch_metadata: {}
+        batch_definitions:
+          delq_history_batch:
+            id: 8a63d1e7-333a-41ed-811c-e0a568265ea4
+            partitioner:
 analytics_enabled: false
 data_context_id: 67e7ab5c-1bb4-42de-b1c8-8418bcb00bd4
