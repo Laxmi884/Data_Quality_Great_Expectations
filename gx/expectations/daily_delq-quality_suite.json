@@ -46,6 +46,18 @@
       },
       "meta": {},
       "type": "expect_column_values_to_be_between"
+    },
+    {
+      "description": "Column 'CURRENT_OUTSTANDING_BAL_AMT' should not be null when CPA_REMAINING_AMORTIZATION > 0 or CPA_REMAINING_AMORTIZATION.notnull()",
+      "id": "2640c3bc-e208-4df5-b10a-74222f25d02f",
+      "kwargs": {
+        "column": "CURRENT_OUTSTANDING_BAL_AMT",
+        "condition_parser": "pandas",
+        "result_format": "COMPLETE",
+        "row_condition": "CPA_REMAINING_AMORTIZATION > 0 or CPA_REMAINING_AMORTIZATION.notnull()"
+      },
+      "meta": {},
+      "type": "expect_column_values_to_not_be_null"
     }
   ],
   "id": "92aacbee-22dc-47be-a51f-5323bf8edea3",

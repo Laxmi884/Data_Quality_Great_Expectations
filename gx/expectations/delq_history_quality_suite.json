@@ -54,6 +54,7 @@
       "type": "expect_column_values_to_not_be_null"
     },
     {
+      "description": "Column 'CURRENT_OUTSTANDING_BAL_AMT' should not be null when CURRENT_OUTSTANDING_BAL_AMT > 0",
       "id": "a697d456-1b3e-447e-80c5-352845e55020",
       "kwargs": {
         "column": "CURRENT_OUTSTANDING_BAL_AMT",
@@ -66,6 +67,7 @@
       "type": "expect_column_values_to_not_be_null"
     },
     {
+      "description": "Column 'CPA_REMAINING_AMORTIZATION' should not be null when CURRENT_OUTSTANDING_BAL_AMT > 0",
       "id": "0dc69e74-9de6-4633-a109-4b272a31f989",
       "kwargs": {
         "column": "CPA_REMAINING_AMORTIZATION",
@@ -78,6 +80,7 @@
       "type": "expect_column_values_to_not_be_null"
     },
     {
+      "description": "Column 'CURRENT_OUTSTANDING_BAL_AMT' should not be null when CPA_REMAINING_AMORTIZATION > 0",
       "id": "fcbc3833-d158-44f0-b55f-108a5669c9e2",
       "kwargs": {
         "column": "CURRENT_OUTSTANDING_BAL_AMT",
