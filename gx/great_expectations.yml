@@ -80,6 +80,14 @@ data_docs_sites:
       base_directory: uncommitted/data_docs/local_site/
     site_index_builder:
       class_name: DefaultSiteIndexBuilder
+  local_site1:
+    class_name: SiteBuilder
+    show_how_to_buttons: true
+    store_backend:
+      class_name: TupleFilesystemStoreBackend
+      base_directory: uncommitted/data_docs/riskrnd/
+    site_index_builder:
+      class_name: DefaultSiteIndexBuilder
 fluent_datasources:
   my_test_source:
     type: pandas
@@ -104,6 +112,18 @@ fluent_datasources:
         batch_definitions:
           delq_history_batch:
             id: 8a63d1e7-333a-41ed-811c-e0a568265ea4
+            partitioner:
+  my_test_class_source:
+    type: pandas
+    id: aa66dfc6-d3d8-461c-9686-3ca33696dc01
+    assets:
+      my_test_class_asset:
+        type: dataframe
+        id: 647f52da-c951-44d2-b1ec-c37183858ab4
+        batch_metadata: {}
+        batch_definitions:
+          my_test_class_batch_definition:
+            id: c305f04b-91b8-4487-813c-c87e2f02adca
             partitioner:
 analytics_enabled: false
 data_context_id: 67e7ab5c-1bb4-42de-b1c8-8418bcb00bd4
