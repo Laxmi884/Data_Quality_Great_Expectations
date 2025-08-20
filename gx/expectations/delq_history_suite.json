@@ -1,0 +1,458 @@
+{
+  "expectations": [
+    {
+      "id": "28e3f7b8-26f4-4517-a426-b31853af6a2e",
+      "kwargs": {
+        "column": "CERTNUM",
+        "result_format": "COMPLETE"
+      },
+      "meta": {},
+      "type": "expect_column_values_to_not_be_null"
+    },
+    {
+      "id": "cbbd70d6-fdfa-42e2-bef5-db92572af041",
+      "kwargs": {
+        "column": "CERTNUM",
+        "result_format": "COMPLETE",
+        "value": 10.0
+      },
+      "meta": {},
+      "type": "expect_column_value_lengths_to_equal"
+    },
+    {
+      "id": "ddd76766-e909-44db-9b10-856601108ed6",
+      "kwargs": {
+        "column": "RATEIND",
+        "result_format": "COMPLETE"
+      },
+      "meta": {},
+      "type": "expect_column_values_to_not_be_null"
+    },
+    {
+      "id": "755961a7-aa3e-4110-a991-885d21019562",
+      "kwargs": {
+        "column": "RATEIND",
+        "result_format": "COMPLETE",
+        "value": 1.0
+      },
+      "meta": {},
+      "type": "expect_column_value_lengths_to_equal"
+    },
+    {
+      "id": "4e2ed9de-8906-4ff7-ad04-313735ffea62",
+      "kwargs": {
+        "column": "REGION",
+        "mostly": 0.99,
+        "result_format": "COMPLETE",
+        "value_set": [
+          "GTA",
+          "ATLANTIC",
+          "ONTARIO",
+          "PACIFIC",
+          "QUEBEC",
+          "PRAIRIES",
+          "ALBERTA"
+        ]
+      },
+      "meta": {},
+      "type": "expect_column_values_to_be_in_set"
+    },
+    {
+      "id": "1d1b19b0-df8a-4402-afec-d6f2dcd7346c",
+      "kwargs": {
+        "column": "REGION",
+        "mostly": 0.99,
+        "result_format": "COMPLETE"
+      },
+      "meta": {},
+      "type": "expect_column_values_to_not_be_null"
+    },
+    {
+      "id": "b4933ee3-2337-4a2e-a03d-7b5c6e7a01c5",
+      "kwargs": {
+        "column": "LOB",
+        "result_format": "COMPLETE"
+      },
+      "meta": {},
+      "type": "expect_column_values_to_not_be_null"
+    },
+    {
+      "id": "3442d664-4fdd-4df3-ba34-c413fcb8e72a",
+      "kwargs": {
+        "column": "DTPRINT",
+        "mostly": 0.99,
+        "result_format": "COMPLETE"
+      },
+      "meta": {},
+      "type": "expect_column_values_to_not_be_null"
+    },
+    {
+      "id": "f19fc7e4-59d2-4b5c-be73-71341fe8fddc",
+      "kwargs": {
+        "column": "INSURAMT",
+        "mostly": 0.99,
+        "result_format": "COMPLETE"
+      },
+      "meta": {},
+      "type": "expect_column_values_to_not_be_null"
+    },
+    {
+      "id": "142c6abe-5e41-4d77-a6fd-ae519ab50e32",
+      "kwargs": {
+        "column": "DTEFFECT",
+        "mostly": 0.99,
+        "result_format": "COMPLETE"
+      },
+      "meta": {},
+      "type": "expect_column_values_to_not_be_null"
+    },
+    {
+      "id": "e07b8856-6a75-4229-b41e-3521ab680e87",
+      "kwargs": {
+        "column": "DTAPPREC",
+        "mostly": 0.99,
+        "result_format": "COMPLETE"
+      },
+      "meta": {},
+      "type": "expect_column_values_to_not_be_null"
+    },
+    {
+      "id": "b1c84bbe-6c3c-4a5f-a4c2-7207086330d7",
+      "kwargs": {
+        "column": "BORINCOM",
+        "result_format": "COMPLETE"
+      },
+      "meta": {},
+      "type": "expect_column_values_to_not_be_null"
+    },
+    {
+      "id": "319d21d0-312b-498a-9126-14ebc35b70bf",
+      "kwargs": {
+        "column": "AMORMTHS",
+        "result_format": "COMPLETE"
+      },
+      "meta": {},
+      "type": "expect_column_values_to_not_be_null"
+    },
+    {
+      "id": "38a42b5d-b280-44d3-9979-6e09219aea24",
+      "kwargs": {
+        "column": "CLOANINT",
+        "mostly": 0.99,
+        "result_format": "COMPLETE"
+      },
+      "meta": {},
+      "type": "expect_column_values_to_not_be_null"
+    },
+    {
+      "id": "bdd5b571-11ed-40df-923e-c1b6e207e526",
+      "kwargs": {
+        "column": "PROVINCE",
+        "result_format": "COMPLETE",
+        "value_set": [
+          "NL",
+          "NT",
+          "BC",
+          "AB",
+          "ON",
+          "PE",
+          "SK",
+          "YT",
+          "NS",
+          "QC",
+          "MB",
+          "NB",
+          "NU"
+        ]
+      },
+      "meta": {},
+      "type": "expect_column_values_to_be_in_set"
+    },
+    {
+      "id": "24674639-81d8-4806-9b6f-e529dda0b6aa",
+      "kwargs": {
+        "column": "PROVINCE",
+        "result_format": "COMPLETE"
+      },
+      "meta": {},
+      "type": "expect_column_values_to_not_be_null"
+    },
+    {
+      "id": "66347515-5dda-4c02-8a4f-d70314cb60a3",
+      "kwargs": {
+        "column": "PROPTYPE",
+        "mostly": 0.99,
+        "result_format": "COMPLETE"
+      },
+      "meta": {},
+      "type": "expect_column_values_to_not_be_null"
+    },
+    {
+      "id": "9e21d106-7f8b-417e-b03b-a55e4db1ee4c",
+      "kwargs": {
+        "column": "LOANAMT",
+        "result_format": "COMPLETE"
+      },
+      "meta": {},
+      "type": "expect_column_values_to_not_be_null"
+    },
+    {
+      "id": "78f3d9f4-3eb2-49f1-8c6a-ee55e6813485",
+      "kwargs": {
+        "column": "FSACODE",
+        "result_format": "COMPLETE"
+      },
+      "meta": {},
+      "type": "expect_column_values_to_not_be_null"
+    },
+    {
+      "id": "6bb70294-9290-41dd-a2a6-13fad7322201",
+      "kwargs": {
+        "column": "FSACODE",
+        "result_format": "COMPLETE",
+        "value": 3.0
+      },
+      "meta": {},
+      "type": "expect_column_value_lengths_to_equal"
+    },
+    {
+      "id": "3c006ade-4fcf-4aba-ba8f-a59768be0b61",
+      "kwargs": {
+        "column": "TIME_MTH_SID",
+        "result_format": "COMPLETE"
+      },
+      "meta": {},
+      "type": "expect_column_values_to_not_be_null"
+    },
+    {
+      "id": "29e63cf4-cf0f-4ced-b13d-b7d1e2560db6",
+      "kwargs": {
+        "column": "D_ind",
+        "result_format": "COMPLETE",
+        "value_set": [
+          "D",
+          "G",
+          "R",
+          null
+        ]
+      },
+      "meta": {},
+      "type": "expect_column_values_to_be_in_set"
+    },
+    {
+      "description": "Ensure GNW_APPLICATION_NUMBER is not null when CURRENT_OUTSTANDING_BAL_AMT is not null",
+      "id": "b74c7e0a-92f9-4b7d-adf5-c6b256490167",
+      "kwargs": {
+        "column": "GNW_APPLICATION_NUMBER",
+        "condition_parser": "pandas",
+        "result_format": "COMPLETE",
+        "row_condition": "CURRENT_OUTSTANDING_BAL_AMT.notnull()"
+      },
+      "meta": {},
+      "type": "expect_column_values_to_not_be_null"
+    },
+    {
+      "description": "Ensure CURRENT_OUTSTANDING_BAL_AMT is not null when GNW_APPLICATION_NUMBER is not null",
+      "id": "d8660f2f-98c0-4233-a5eb-71ae326da6c3",
+      "kwargs": {
+        "column": "CURRENT_OUTSTANDING_BAL_AMT",
+        "condition_parser": "pandas",
+        "result_format": "COMPLETE",
+        "row_condition": "GNW_APPLICATION_NUMBER.notnull()"
+      },
+      "meta": {},
+      "type": "expect_column_values_to_not_be_null"
+    },
+    {
+      "description": "Ensure CURRENT_LOAN_STAGE is not null when BVA_UNREPORTED_LENDER_FLAG is null (That means the file is reported) 99% of the time",
+      "id": "4dc057ea-13d7-4a9b-9119-9c15c333f3c6",
+      "kwargs": {
+        "column": "CURRENT_LOAN_STAGE",
+        "condition_parser": "pandas",
+        "mostly": 0.99,
+        "result_format": "COMPLETE",
+        "row_condition": "BVA_UNREPORTED_LENDER_FLAG.isnull()"
+      },
+      "meta": {},
+      "type": "expect_column_values_to_not_be_null"
+    },
+    {
+      "description": "Ensure INT_RATE_TYPE is not null when GNW_APPLICATION_NUMBER is not null",
+      "id": "779d35ce-a054-497a-b2da-611f45ae124e",
+      "kwargs": {
+        "column": "INT_RATE_TYPE",
+        "condition_parser": "pandas",
+        "result_format": "COMPLETE",
+        "row_condition": "GNW_APPLICATION_NUMBER.notnull()"
+      },
+      "meta": {},
+      "type": "expect_column_values_to_not_be_null"
+    },
+    {
+      "description": "Ensure DETAIL_LENDER_PTY_ALIAS is not null when GNW_APPLICATION_NUMBER is not null",
+      "id": "b986e774-58a0-4ac4-9c64-e1a25f5e4ccc",
+      "kwargs": {
+        "column": "DETAIL_LENDER_PTY_ALIAS",
+        "condition_parser": "pandas",
+        "result_format": "COMPLETE",
+        "row_condition": "GNW_APPLICATION_NUMBER.notnull()"
+      },
+      "meta": {},
+      "type": "expect_column_values_to_not_be_null"
+    },
+    {
+      "description": "Ensure CURRENT_TERM_EXPIRY_DATE is not null when BVA_UNREPORTED_LENDER_FLAG is null (That means the file is reported) 99% of the time",
+      "id": "113a4677-3189-4ab1-90d1-79b23b5b4afc",
+      "kwargs": {
+        "column": "CURRENT_TERM_EXPIRY_DATE",
+        "condition_parser": "pandas",
+        "mostly": 0.99,
+        "result_format": "COMPLETE",
+        "row_condition": "BVA_UNREPORTED_LENDER_FLAG.isnull()"
+      },
+      "meta": {},
+      "type": "expect_column_values_to_not_be_null"
+    },
+    {
+      "description": "Ensure REMAINING_INT_TERM is not null when BVA_UNREPORTED_LENDER_FLAG is null (That means the file is reported) 99% of the time",
+      "id": "9c74ba5c-e385-476b-a7ee-d04a3c32a252",
+      "kwargs": {
+        "column": "REMAINING_INT_TERM",
+        "condition_parser": "pandas",
+        "mostly": 0.99,
+        "result_format": "COMPLETE",
+        "row_condition": "BVA_UNREPORTED_LENDER_FLAG.isnull()"
+      },
+      "meta": {},
+      "type": "expect_column_values_to_not_be_null"
+    },
+    {
+      "description": "Ensure CURRENT_LOAN_RATE is not null when GNW_APPLICATION_NUMBER is not null",
+      "id": "8a02a324-823f-4393-9298-0f29cbbc8108",
+      "kwargs": {
+        "column": "CURRENT_LOAN_RATE",
+        "condition_parser": "pandas",
+        "result_format": "COMPLETE",
+        "row_condition": "GNW_APPLICATION_NUMBER.notnull()"
+      },
+      "meta": {},
+      "type": "expect_column_values_to_not_be_null"
+    },
+    {
+      "description": "Ensure CURRENT_PAY_AMT is not null when GNW_APPLICATION_NUMBER is not null",
+      "id": "f5e63d01-7e83-4f3f-8747-831bdc611153",
+      "kwargs": {
+        "column": "CURRENT_PAY_AMT",
+        "condition_parser": "pandas",
+        "result_format": "COMPLETE",
+        "row_condition": "GNW_APPLICATION_NUMBER.notnull()"
+      },
+      "meta": {},
+      "type": "expect_column_values_to_not_be_null"
+    },
+    {
+      "description": "Ensure CURRENT_PAY_FREQ is not null when BVA_UNREPORTED_LENDER_FLAG is null (That means the file is reported) 99% of the time",
+      "id": "59da5372-4fb5-44d5-9c4e-836a8ac28717",
+      "kwargs": {
+        "column": "CURRENT_PAY_FREQ",
+        "condition_parser": "pandas",
+        "mostly": 0.99,
+        "result_format": "COMPLETE",
+        "row_condition": "BVA_UNREPORTED_LENDER_FLAG.isnull()"
+      },
+      "meta": {},
+      "type": "expect_column_values_to_not_be_null"
+    },
+    {
+      "description": "Ensure POLICY_SID is not null when GNW_APPLICATION_NUMBER is not null",
+      "id": "3236e5be-a7f1-48e3-8a30-a330a5a0b374",
+      "kwargs": {
+        "column": "POLICY_SID",
+        "condition_parser": "pandas",
+        "result_format": "COMPLETE",
+        "row_condition": "GNW_APPLICATION_NUMBER.notnull()"
+      },
+      "meta": {},
+      "type": "expect_column_values_to_not_be_null"
+    },
+    {
+      "description": "Ensure BVA_PROPERTY_VALUE is not null when GNW_APPLICATION_NUMBER is not null",
+      "id": "aa2cdce2-3cd6-4d85-b404-290b98875582",
+      "kwargs": {
+        "column": "BVA_PROPERTY_VALUE",
+        "condition_parser": "pandas",
+        "result_format": "COMPLETE",
+        "row_condition": "GNW_APPLICATION_NUMBER.notnull()"
+      },
+      "meta": {},
+      "type": "expect_column_values_to_not_be_null"
+    },
+    {
+      "description": "Ensure CPA_REMAINING_AMORTIZATION is not null when GNW_APPLICATION_NUMBER is not null",
+      "id": "572e09b8-a8a4-4b42-9794-b0174cbb61bc",
+      "kwargs": {
+        "column": "CPA_REMAINING_AMORTIZATION",
+        "condition_parser": "pandas",
+        "result_format": "COMPLETE",
+        "row_condition": "GNW_APPLICATION_NUMBER.notnull()"
+      },
+      "meta": {},
+      "type": "expect_column_values_to_not_be_null"
+    },
+    {
+      "description": "Ensure BVA_LTV is not null when GNW_APPLICATION_NUMBER is not null",
+      "id": "e12c4443-8a1e-4e21-8d9b-d4366fb1d9fd",
+      "kwargs": {
+        "column": "BVA_LTV",
+        "condition_parser": "pandas",
+        "result_format": "COMPLETE",
+        "row_condition": "GNW_APPLICATION_NUMBER.notnull()"
+      },
+      "meta": {},
+      "type": "expect_column_values_to_not_be_null"
+    },
+    {
+      "id": "c9d8c02e-d1df-4983-9211-b9ae0d4d8d38",
+      "kwargs": {
+        "column": "FIXED_RATEIND",
+        "result_format": "COMPLETE"
+      },
+      "meta": {},
+      "type": "expect_column_values_to_not_be_null"
+    },
+    {
+      "id": "be8647fa-bb7b-41e5-98ee-edfb970427df",
+      "kwargs": {
+        "column": "CRD_SCORE_CAPITAL",
+        "mostly": 0.99,
+        "result_format": "COMPLETE"
+      },
+      "meta": {},
+      "type": "expect_column_values_to_not_be_null"
+    },
+    {
+      "id": "80886c17-685f-4e50-acb4-de15235b10ed",
+      "kwargs": {
+        "column": "DateTime_Out",
+        "result_format": "COMPLETE"
+      },
+      "meta": {},
+      "type": "expect_column_values_to_not_be_null"
+    },
+    {
+      "id": "fb9b7e52-0a8f-4a19-81dd-3309cab88c65",
+      "kwargs": {
+        "column": "Previous Month End",
+        "result_format": "COMPLETE"
+      },
+      "meta": {},
+      "type": "expect_column_values_to_not_be_null"
+    }
+  ],
+  "id": "c360b26a-0176-4b81-9cd1-610231dd2b04",
+  "meta": {
+    "great_expectations_version": "1.5.5"
+  },
+  "name": "delq_history_suite",
+  "notes": null
+}

@@ -1,0 +1,22 @@
+{
+  "actions": [
+    {
+      "name": "Update Data Docs for delq_history_checkpoint_dev_actions",
+      "site_names": [
+        "local_site1"
+      ],
+      "type": "update_data_docs"
+    }
+  ],
+  "id": "08b804fb-c352-4a54-ab1c-1e7c9a8833b3",
+  "name": "delq_history_checkpoint_dev",
+  "result_format": {
+    "result_format": "COMPLETE"
+  },
+  "validation_definitions": [
+    {
+      "id": "92de1ba2-7566-4c5c-8ccd-200acd68f825",
+      "name": "delq_history_validation_definition"
+    }
+  ]
+}

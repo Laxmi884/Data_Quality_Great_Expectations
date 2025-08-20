@@ -80,12 +80,20 @@ data_docs_sites:
       base_directory: uncommitted/data_docs/local_site/
     site_index_builder:
       class_name: DefaultSiteIndexBuilder
-  local_site1:
+  local_site2:
     class_name: SiteBuilder
     show_how_to_buttons: true
     store_backend:
       class_name: TupleFilesystemStoreBackend
       base_directory: uncommitted/data_docs/riskrnd/
+    site_index_builder:
+      class_name: DefaultSiteIndexBuilder
+  local_site1:
+    class_name: SiteBuilder
+    show_how_to_buttons: true
+    store_backend:
+      class_name: TupleFilesystemStoreBackend
+      base_directory: //sharedsagen01.file.core.windows.net/camishared01/export/Shared/Risk/Risk_Analytics/Lax_dev/Data_Validation/
     site_index_builder:
       class_name: DefaultSiteIndexBuilder
 fluent_datasources:
@@ -124,6 +132,18 @@ fluent_datasources:
         batch_definitions:
           my_test_class_batch_definition:
             id: c305f04b-91b8-4487-813c-c87e2f02adca
+            partitioner:
+  risk_analytics_delq_history:
+    type: pandas
+    id: f9802b01-d6c8-4e54-aa46-684f208b09ee
+    assets:
+      delq_history_table:
+        type: dataframe
+        id: 79d13bc5-d003-448b-9f53-aba998d73a3e
+        batch_metadata: {}
+        batch_definitions:
+          delq_history_batch:
+            id: 86098eca-7074-4347-9639-7849be57ecdf
             partitioner:
 analytics_enabled: false
 data_context_id: 67e7ab5c-1bb4-42de-b1c8-8418bcb00bd4

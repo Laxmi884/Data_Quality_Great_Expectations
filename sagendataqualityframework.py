@@ -37,7 +37,8 @@ class SagenDataQuality:
             raise ValueError("DataFrame cannot be None")
         
         self.df = df
-        self.context = self._initialize_context()
+        self.project_root_dir = project_root_dir if project_root_dir else os.getcwd()
+        self.context = self._initialize_context(mode=mode, project_root_dir=self.project_root_dir)
         self.batch_parameters = {"dataframe": df}
 
     def _initialize_context(self, mode: str = "file", project_root_dir: Optional[str] = None) -> object:
@@ -405,11 +406,15 @@ class SagenDataQuality:
                         "You must provide either a 'batch_definition', a 'data_asset', "
                         "or both 'data_source_name' and 'data_asset_name'."
                     )
+            else:
+                validation_definition_name = gx.ValidationDefinition(
+                    data = batch_definition,
+                    suite = suite,
+                    name = validation_definition_name
+                )
 
             return self.context.validation_definitions.add(
-                name=validation_definition_name,
-                expectation_suite=suite,
-                data=batch_definition
+                validation_definition_name
             )
         except Exception as e:
             raise ValueError(
@@ -484,12 +489,16 @@ class SagenDataQuality:
 
         try:
             if actions is None:
-                actions = [
-                    UpdateDataDocsAction(name=f"Update Data Docs for {action_list_name}",site_names=["local_site1"])
-                ]
+                if action_list_name == "delq_history_checkpoint_dev_actions":
+                    actions = [
+                        UpdateDataDocsAction(name=f"Update Data Docs for {action_list_name}", site_names=["local_site1"])
+                    ]
+                else:
+                    actions = [
+                        UpdateDataDocsAction(name=f"Update Data Docs for {action_list_name}", site_names=["local_site2"])
+                    ]
 
-            action_list = gx.ActionList(name=action_list_name, actions=actions)
-            self.context.action_lists.add(action_list)
+            action_list = actions
             return action_list
         except Exception as e:
             raise ValueError(f"Failed to create action list '{action_list_name}': {str(e)}")
@@ -528,9 +537,8 @@ class SagenDataQuality:
 
             checkpoint = gx.Checkpoint(
                 name=checkpoint_name,
-                context=self.context,
-                validation_definition=validation_definition,
-                action_list=action_list,
+                validation_definitions=[validation_definition],
+                actions=action_list,
                 result_format={"result_format": result_format}
             )
             self.context.checkpoints.add(checkpoint)

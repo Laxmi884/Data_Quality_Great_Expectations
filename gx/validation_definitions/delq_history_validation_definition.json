@@ -1,0 +1,22 @@
+{
+  "data": {
+    "asset": {
+      "id": "79d13bc5-d003-448b-9f53-aba998d73a3e",
+      "name": "delq_history_table"
+    },
+    "batch_definition": {
+      "id": "86098eca-7074-4347-9639-7849be57ecdf",
+      "name": "delq_history_batch"
+    },
+    "datasource": {
+      "id": "f9802b01-d6c8-4e54-aa46-684f208b09ee",
+      "name": "risk_analytics_delq_history"
+    }
+  },
+  "id": "92de1ba2-7566-4c5c-8ccd-200acd68f825",
+  "name": "delq_history_validation_definition",
+  "suite": {
+    "id": "c360b26a-0176-4b81-9cd1-610231dd2b04",
+    "name": "delq_history_suite"
+  }
+}
